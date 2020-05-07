@@ -37,12 +37,16 @@ addCommandHandler('tc', function(plr, cmd, t)
 	if (t) then
 		local pl = getPlayerFromName(t);
 		if (pl) then
-			triggerClientEvent(plr, 'startGame', plr,pl, true);
+			if (pl ~= plr) then
+				triggerClientEvent(plr, 'startGame', plr,pl, true);
 
-			triggerClientEvent(pl, 'startGame', pl, plr, nil);
+				triggerClientEvent(pl, 'startGame', pl, plr, nil);
 
-			outputChatBox('Wyzwales gracza '..getPlayerName(pl)..' na pojedynek!', plr);
-			outputChatBox('Gracz '..getPlayerName(plr)..' wyzywa Cię na pojedynek!', pl);
+				outputChatBox('Wyzwales gracza '..getPlayerName(pl)..' na pojedynek!', plr);
+				outputChatBox('Gracz '..getPlayerName(plr)..' wyzywa Cię na pojedynek!', pl);
+			else
+				outputChatBox('Nie możesz grać sam ze sobą.',plr);
+			end
 		else
 			outputChatBox('Nie znaleziono takiego gracza.',plr);
 		end
