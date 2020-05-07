@@ -1,0 +1,7 @@
+<meta>
+	<script src="tictactoe.lua" type="client" cache="false" />
+	<script src="tictactoe_s.lua" />
+	
+	<file src="img/x.png" />
+	<file src="img/o.png" />
+</meta>
