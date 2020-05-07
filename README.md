@@ -10,7 +10,9 @@ Tic tac toe minigame with players
   
   Ikonki pochodzą z internetu.
  
+ **#Video**
  
+ https://www.youtube.com/watch?v=XAKapU00Fz4
  
 **#Screeny**
 
