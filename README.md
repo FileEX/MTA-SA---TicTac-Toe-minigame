@@ -32,8 +32,6 @@ Tic tac toe minigame with players
 
 Autor: **FileEX**
 
-Podziękowania, za testy: Pazdam
-
 **#Kontakt**
 
 Discord: FileEX#3656
