@@ -1,6 +1,5 @@
 --[[
 	Author: FileEX
-	Tests: Pazdam
 ]]
 
 local tc = {};
